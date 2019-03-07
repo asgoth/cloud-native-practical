@@ -1,4 +1,4 @@
-package com.ezgroceries.shoppinglist.web;
+package com.ezgroceries.shoppinglist.controllers;
 
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verify;
