@@ -31,4 +31,8 @@ public class ShoppingList {
     public void addIngredient(String ingredient) {
         this.ingredients.add(ingredient);
     }
+
+    public void addIngredients(List<String> ingredients) {
+        this.ingredients.addAll(ingredients);
+    }
 }
