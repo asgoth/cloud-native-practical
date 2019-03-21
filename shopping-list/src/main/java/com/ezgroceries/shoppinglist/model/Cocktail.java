@@ -5,6 +5,7 @@ import java.util.UUID;
 
 public class Cocktail {
 
+    private final UUID cocktailId;
     private String name;
     private String glass;
     private String instructions;
@@ -12,11 +13,16 @@ public class Cocktail {
     private List<String> ingredients;
 
     public Cocktail(UUID cocktailId, String name, String glass, String instructions, String image, List<String> ingredients) {
+        this.cocktailId = cocktailId;
         this.name = name;
         this.glass = glass;
         this.instructions = instructions;
         this.image = image;
         this.ingredients = ingredients;
+    }
+
+    public UUID getCocktailId() {
+        return cocktailId;
     }
 
     public String getName() {
